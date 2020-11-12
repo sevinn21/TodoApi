@@ -1,0 +1,68 @@
+.card {
+    width: 250px;
+    min-height: 50px;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 5px #d3d3d3;
+    cursor: pointer;
+    outline: none;
+  
+}
+
+.card-header {
+ padding: 0.25em 1em;
+}
+
+.demo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+   
+}
+
+.button-demo {
+   text-align:right;
+   padding-top:15px;
+   margin-right:10px;
+}
+.header { 
+    border-bottom:3px solid #9faf41;
+}
+
+.header h3 {
+    margin-left: 600px;
+    font-size: large;
+    font-style: italic;
+}
+
+.header h2 {
+    font-size: large;
+    font-style: italic;
+    margin-left: 600px;
+}
+
+.form-control {
+    width: 600px;
+    height: 480px;
+    padding: 20px;
+    position: relative;
+    margin: auto;
+    background-color: grey;
+    padding-top: 150px;
+}
+
+.form-content {
+    width: 180px;
+    height: 150px;
+
+    position: relative;
+    margin: auto;
+    
+}
+
+.form-div{
+    width: 250px;
+    height: 25px;
+    padding-top: 15px;
+}
