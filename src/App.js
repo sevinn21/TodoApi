@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, BrowserRouter as Router } from 'react-router-dom';
+import DataAdd from './screens/DataAdd';
+import DataList from './screens/DataList';
+import { Route, Switch } from 'react-router-dom';
+import DataUpdate from './screens/DataUpdate';
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Switch>
+    <Route path="/" exact component={DataList} />
+     <Route path="/ekle"  component={DataAdd} />
+     <Route path="/güncelle/:id"  component={DataUpdate} />
+    </Switch>
+   </BrowserRouter>
+ 
+ 
+    </>
+  
   );
 }
 
